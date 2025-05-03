@@ -43,5 +43,8 @@ async def get_web_content_tool(url: str) -> str:
         return "Timeout occurred while fetching web content. Please try again later."
     except Exception as e:
         return f"An error occurred while fetching web content: {str(e)}"
+    
+if __name__ == "__main__":
+    mcp.run(transport="sse")
 
 
